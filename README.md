@@ -16,6 +16,7 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 Контейнер завершился, потому что ему был передан сигнал SIGINT от комбинации клавиш CTRL+C, что завершило процесс
 
 п.4-5
+
 <img width="692" height="96" alt="Задача 3 2" src="https://github.com/user-attachments/assets/fe555ba7-f3ad-459b-9434-2622d9f4aee5" />
 
 п.6
