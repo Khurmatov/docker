@@ -95,6 +95,7 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 <img width="1095" height="347" alt="Задача 4 1" src="https://github.com/user-attachments/assets/27db8bd6-7eb0-4b9a-8372-3ad51162939c" />
 
 п.2
+
 <img width="957" height="245" alt="Задача 4 2" src="https://github.com/user-attachments/assets/00b75c51-4cdd-479d-bc62-89194d999a04" />
 
 п.3
