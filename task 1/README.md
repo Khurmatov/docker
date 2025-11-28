@@ -91,6 +91,89 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 
 ## Ответ
 
+п.1
+<img width="1095" height="347" alt="Задача 4 1" src="https://github.com/user-attachments/assets/27db8bd6-7eb0-4b9a-8372-3ad51162939c" />
 
+п.2
+<img width="957" height="245" alt="Задача 4 2" src="https://github.com/user-attachments/assets/00b75c51-4cdd-479d-bc62-89194d999a04" />
 
+п.3
+<img width="1027" height="382" alt="Задача 4 3" src="https://github.com/user-attachments/assets/b117a912-f2d6-4896-9b31-bcff2939deae" />
 
+п.4 - п.5
+<img width="1098" height="1028" alt="Задача 4 4" src="https://github.com/user-attachments/assets/75084d99-39e5-4088-a969-89afefa838c4" />
+
+## Задача 5
+
+1. Создайте отдельную директорию(например /tmp/netology/docker/task5) и 2 файла внутри него.
+"compose.yaml" с содержимым:
+```
+version: "3"
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+"docker-compose.yaml" с содержимым:
+```
+version: "3"
+services:
+  registry:
+    image: registry:2
+
+    ports:
+    - "5000:5000"
+```
+
+И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
+
+2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
+
+3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
+4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
+5. Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local  окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
+
+```
+version: '3'
+
+services:
+  nginx:
+    image: 127.0.0.1:5000/custom-nginx
+    ports:
+      - "9090:80"
+```
+6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
+
+7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+
+В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+## Ответ
+
+п.1
+<img width="1372" height="432" alt="Задача 5 1" src="https://github.com/user-attachments/assets/ae507802-b710-4b76-8491-c2dc0e862f4b" />
+
+По умолчанию путь к файлу Compose: compose.yaml (предпочтительный) или compose.yml. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обеспечения обратной совместимости с более ранними версиями. Если в рабочем каталоге оба файла, Compose предпочитает compose.yaml.
+
+п.2
+<img width="1652" height="692" alt="Задача 5 2" src="https://github.com/user-attachments/assets/1ae6f2e3-9c0d-4f67-9bb8-76e41381b53e" />
+
+п.3
+<img width="1216" height="628" alt="Задача 5 3" src="https://github.com/user-attachments/assets/839c2d07-7dd2-4910-8fc1-d4135e88893f" />
+<img width="897" height="592" alt="Задача 5 4" src="https://github.com/user-attachments/assets/ee1003f8-9d05-4c6a-90a5-d512bdfc216e" />
+
+п.4
+<img width="1802" height="967" alt="Задача 5 5" src="https://github.com/user-attachments/assets/0d81d6d2-dc3b-41fe-a706-caac90ac91f1" />
+
+п.5
+<img width="1858" height="997" alt="Задача 5 6" src="https://github.com/user-attachments/assets/023ac09d-8e6e-4e5f-b971-140ffd09133a" />
+
+п.6
+<img width="1778" height="765" alt="Задача 5 7" src="https://github.com/user-attachments/assets/3696ee5c-20a3-4546-87d1-341d3f101cae" />
+<img width="1798" height="587" alt="Задача 5 8" src="https://github.com/user-attachments/assets/e321c581-2e8b-4d41-a2bd-4a46a7c35178" />
+
+п.7
+<img width="1847" height="492" alt="Задача 5 9" src="https://github.com/user-attachments/assets/47cbf98e-57e8-487d-ac06-ece4e3acce59" />
+После выполнения команды появилось предупреждение ```Found orphan containers ([task_5-registry-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.```, которое говорит о том, что найдены контейнеры, которые не описаны в файле. Для их очистки нужно выполнить ту же команду(```docker compose up -d```) с флагом --remove-orphans.
