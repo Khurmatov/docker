@@ -34,7 +34,7 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 
 ## Ответ
 
-<img width="1533" height="589" alt="Задача 2" src="https://github.com/user-attachments/assets/6392f986-2e0b-43fa-a4df-9eab573d3ccf" />
+<img width="1533" height="589" alt="Задача 2" src="https://github.com/user-attachments/assets/ffff799d-68f1-4866-bce8-414496eb1c3b" />
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -53,33 +53,32 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 ## Ответ
 
 п.1 - п.3
-<img width="998" height="306" alt="Задача 3 1" src="https://github.com/user-attachments/assets/1b640379-f7f5-4781-97ed-68ebecdc0d64" />
+<img width="998" height="306" alt="Задача 3 1" src="https://github.com/user-attachments/assets/40570d5f-8dde-458d-a345-534da254a996" />
 
 Комбинация клавиш Ctrl-C передает контейнеру сигнал SIGINT, и контейнер останавливается, так как завершается его процесс.
 
 п.4 - п.5
 
-<img width="692" height="96" alt="Задача 3 2" src="https://github.com/user-attachments/assets/90da2a9f-e515-4e20-81b6-8c8db7e65a7a" />
+<img width="692" height="96" alt="Задача 3 2" src="https://github.com/user-attachments/assets/7d1d7f52-8067-4a2f-a03c-f9624601f419" />
 
 п.6
-<img width="1287" height="764" alt="Задача 3 4" src="https://github.com/user-attachments/assets/a10a9fb1-3004-43fb-8725-f80ee7b5a2a5" />
+<img width="1287" height="764" alt="Задача 3 4" src="https://github.com/user-attachments/assets/772fe9c7-4f0e-47cf-9bae-639407629caf" />
 
 п.7
-
-<img width="616" height="780" alt="Задача 3 5" src="https://github.com/user-attachments/assets/f3d3786d-eb08-4f62-a3de-7662f215ed3f" />
+<img width="616" height="780" alt="Задача 3 5" src="https://github.com/user-attachments/assets/9d592e3e-7d82-4d7c-b717-35397330d84e" />
 
 п.8 - п.9
 
-<img width="711" height="238" alt="Задача 3 6" src="https://github.com/user-attachments/assets/0c9baee3-6e5e-45aa-ac0f-eef59e873f09" />
+<img width="711" height="238" alt="Задача 3 6" src="https://github.com/user-attachments/assets/980ca10a-d5d4-4ffb-9f47-158aab9a34ae" />
 
 п.10
 
-<img width="652" height="122" alt="Задача 3 7" src="https://github.com/user-attachments/assets/484e8be8-f24a-48ed-a210-88766224dc3f" />
+<img width="652" height="122" alt="Задача 3 7" src="https://github.com/user-attachments/assets/f26b2399-b457-4332-8071-cbd3c55b444d" />
 
 Мы поменяли порт, который слуашает nginx, а сопостовление портов запущенного контейнера и хост машины оставили как есть.
 
 п.12
-<img width="1352" height="195" alt="Задача 3 8" src="https://github.com/user-attachments/assets/7772a1c9-ade6-45a1-a644-d9e7720dd547" />
+<img width="1352" height="195" alt="Задача 3 8" src="https://github.com/user-attachments/assets/abf4622e-952d-4ca3-9a3e-bd2cce1e0a9f" />
 
 ## Задача 4
 
@@ -92,14 +91,14 @@ https://hub.docker.com/repository/docker/khurmatov94/custom-nginx/general
 ## Ответ
 
 п.1
-<img width="1095" height="347" alt="Задача 4 1" src="https://github.com/user-attachments/assets/27db8bd6-7eb0-4b9a-8372-3ad51162939c" />
+<img width="1095" height="347" alt="Задача 4 1" src="https://github.com/user-attachments/assets/ca70df5b-116d-4e10-8782-98d7e74b741c" />
 
 п.2
 
-<img width="957" height="245" alt="Задача 4 2" src="https://github.com/user-attachments/assets/00b75c51-4cdd-479d-bc62-89194d999a04" />
+<img width="957" height="245" alt="Задача 4 2" src="https://github.com/user-attachments/assets/3bfcd51a-e39a-4cf8-b9a0-ce3fb0f56a35" />
 
 п.3 - п.5
-<img width="1098" height="1028" alt="Задача 4 4" src="https://github.com/user-attachments/assets/75084d99-39e5-4088-a969-89afefa838c4" />
+<img width="1098" height="1028" alt="Задача 4 4" src="https://github.com/user-attachments/assets/4f913d2d-3821-45a6-9328-98431ec3b7e7" />
 
 ## Задача 5
 
@@ -151,27 +150,27 @@ services:
 ## Ответ
 
 п.1
-<img width="1372" height="432" alt="Задача 5 1" src="https://github.com/user-attachments/assets/ae507802-b710-4b76-8491-c2dc0e862f4b" />
+<img width="1372" height="432" alt="Задача 5 1" src="https://github.com/user-attachments/assets/091590c8-74d0-4123-b81a-b51ada944bc4" />
 
 По умолчанию путь к файлу Compose: compose.yaml (предпочтительный) или compose.yml. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обеспечения обратной совместимости с более ранними версиями. Если в рабочем каталоге оба файла, Compose предпочитает compose.yaml.
 
 п.2
-<img width="1652" height="692" alt="Задача 5 2" src="https://github.com/user-attachments/assets/1ae6f2e3-9c0d-4f67-9bb8-76e41381b53e" />
+<img width="1652" height="692" alt="Задача 5 2" src="https://github.com/user-attachments/assets/55cce55e-6c04-481d-82b0-a41dac0c6a7c" />
 
 п.3
-<img width="1216" height="628" alt="Задача 5 3" src="https://github.com/user-attachments/assets/839c2d07-7dd2-4910-8fc1-d4135e88893f" />
-<img width="897" height="592" alt="Задача 5 4" src="https://github.com/user-attachments/assets/ee1003f8-9d05-4c6a-90a5-d512bdfc216e" />
+<img width="1216" height="628" alt="Задача 5 3" src="https://github.com/user-attachments/assets/afa0f2a7-ec41-4df9-a32e-05f764de2f2d" />
+<img width="897" height="592" alt="Задача 5 4" src="https://github.com/user-attachments/assets/16f0689f-948f-4d83-82cb-c11682688f57" />
 
 п.4
-<img width="1802" height="967" alt="Задача 5 5" src="https://github.com/user-attachments/assets/0d81d6d2-dc3b-41fe-a706-caac90ac91f1" />
+<img width="1802" height="967" alt="Задача 5 5" src="https://github.com/user-attachments/assets/37118485-a84d-46ea-859e-47b486065a05" />
 
 п.5
-<img width="1858" height="997" alt="Задача 5 6" src="https://github.com/user-attachments/assets/023ac09d-8e6e-4e5f-b971-140ffd09133a" />
+<img width="1858" height="997" alt="Задача 5 6" src="https://github.com/user-attachments/assets/76dd961e-6207-48ba-9516-dddc63475dc3" />
 
 п.6
-<img width="1778" height="765" alt="Задача 5 7" src="https://github.com/user-attachments/assets/3696ee5c-20a3-4546-87d1-341d3f101cae" />
-<img width="1798" height="587" alt="Задача 5 8" src="https://github.com/user-attachments/assets/e321c581-2e8b-4d41-a2bd-4a46a7c35178" />
+<img width="1778" height="765" alt="Задача 5 7" src="https://github.com/user-attachments/assets/04f93beb-f79f-4f23-98c4-ec5cae494aa1" />
+<img width="1798" height="587" alt="Задача 5 8" src="https://github.com/user-attachments/assets/7770c58b-f1a9-4680-996f-61fbf29c8003" />
 
 п.7
-<img width="1847" height="492" alt="Задача 5 9" src="https://github.com/user-attachments/assets/47cbf98e-57e8-487d-ac06-ece4e3acce59" />
+<img width="1847" height="492" alt="Задача 5 9" src="https://github.com/user-attachments/assets/71c7ee77-d13b-4724-bd3d-3e476a8a27f5" />
 После выполнения команды появилось предупреждение ```Found orphan containers ([task_5-registry-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.```, которое говорит о том, что найдены контейнеры, которые не описаны в файле. Для их очистки нужно выполнить ту же команду(```docker compose up -d```) с флагом --remove-orphans.
